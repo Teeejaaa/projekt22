@@ -3,7 +3,7 @@
 <head>
 <title>Stranka pro akci</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=0.5">
+<meta name="viewport" content="width=device-width, initial-scale=2">
 
 
 
@@ -48,6 +48,8 @@ font-style:normal;
 font-family:Georgia, "Times New Roman", Times, serif;
 }
 
+/*jen at dole jsou odkazy atd spravne*/
+
 .fl_left{
 float:left;
 }
@@ -56,60 +58,12 @@ float:left;
 float:right;
 }
 
-img{
-margin:0; 
-padding:0; 
-border:none; 
-line-height:normal; 
-vertical-align:middle;
-}
-
-.imgholder, .imgl, .imgr{
-padding:4px; 
-border:1px solid #D6D6D6;
-text-align:center;
-}
-
-.imgl{
-float:left;
-margin:0 15px 15px 0;
-clear:left;
-}
-
-.imgr{
-float:right;
-margin:0 0 15px 15px; 
-clear:right;
-}
-
-
 
 address, article, aside, figcaption, figure, footer, header, nav, section{
 display:block;
 margin:0; 
 padding:0;
 }
-
-q{
-display:block;
-padding:0 10px 8px 10px;
-color:#979797;
-background-color:#ECECEC;
-font-style:italic;
-line-height:normal;
-}
-
-q:before{
-content:'� ';
-font-size:26px;
-}
-
-q:after{
-content:' �';
-font-size:26px;
-line-height:0;
-}
-
 
 
 div.wrapper{
@@ -120,7 +74,12 @@ padding:0;
 text-align:left;
 }
 
-.row1, .row1 a{
+
+
+
+
+
+.row1 a{
 color:#C0BAB6;
 background-color:#000000;
 }
@@ -183,18 +142,9 @@ padding:0;
 border:none;
 }
 
-legend{
-display:none;
-}
-
-input, textarea, select{
-font-size:12px;
-font-family:Georgia,"Times New Roman",Times,serif;
-}
 
 .one_quarter, .two_quarter, .three_quarter, .four_quarter{
 display:block;
-float:left;
 margin:0 20px 0 0;
 }
 
@@ -246,11 +196,6 @@ margin-right:0;
 
 #header{
 padding:20px 0;
-}
-
-#header #hgroup{
-float:left;
-margin:0 0 20px 0;
 }
 
 #header #hgroup h1, #header #hgroup h2{
@@ -329,24 +274,14 @@ width:100%;
 line-height:1.8em;
 }
 
-#container #homepage #services article figure img{
-margin:0 0 15px 0;
-padding:4px;
-border:1px solid #D6D6D6;
-}
-
 
 #container #homepage #services article figure h2{
 font-size:14px;
 font-weight:bold;
 }
 
-#container #homepage #intro article figure img{
-float:right;
-margin:0 0 10px 0;
-padding:4px;
-border:1px solid #D6D6D6;
-}
+
+
 #container #homepage #intro article figure figcaption{
 float:left;
 width:460px;
@@ -420,13 +355,13 @@ padding: 0;
 <div class="wrapper row2">
   <div id="container" class="clear">
    
-    <section id="slider"><a href="#"><img src="images/demo/960x360.gif" alt=""></a></section>
+    <section id="slider"><a href="#"><img src="images/demo/960x360.gif"></a></section>
   
     <div id="homepage">
       
       <section id="services" class="clear">
         <article class="one_third">
-          <figure><img src="images/demo/290x180.gif" width="290" height="180" alt="">
+          <figure><img src="images/demo/290x180.gif" width="290" height="180">
             <figcaption>
               <h2>Cosplaye</h2>
               <p>Neco o te akci</p>
@@ -435,7 +370,7 @@ padding: 0;
           </figure>
         </article>
         <article class="one_third">
-          <figure><img src="images/demo/290x180.gif" width="290" height="180" alt="">
+          <figure><img src="images/demo/290x180.gif" width="290" height="180">
             <figcaption>
               <h2>Přednáška</h2>
               <p>Neco o te akci</p>
@@ -444,7 +379,7 @@ padding: 0;
           </figure>
         </article>
         <article class="one_third lastbox">
-          <figure><img src="images/demo/290x180.gif" width="290" height="180" alt="">
+          <figure><img src="images/demo/290x180.gif" width="290" height="180">
             <figcaption>
               <h2>Cesta po hádankách</h2>
               <p>necoo o teto akci</p>
