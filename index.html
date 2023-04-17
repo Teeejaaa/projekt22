@@ -22,6 +22,7 @@ color:#919191;
 background-color:#232323;
 }
 
+/*odsunuti pomoci tecky*/
 .clear:after{
 content:".";
 display:block;
@@ -42,12 +43,6 @@ outline:none;
 text-decoration:none;
 }
 
-code{
-font-weight:normal;
-font-style:normal;
-font-family:Georgia, "Times New Roman", Times, serif;
-}
-
 /*jen at dole jsou odkazy atd spravne*/
 
 .fl_left{
@@ -64,19 +59,6 @@ display:block;
 margin:0; 
 padding:0;
 }
-
-
-div.wrapper{
-display:block;
-width:100%;
-margin:0;
-padding:0; 
-text-align:left;
-}
-
-
-
-
 
 
 .row1 a{
@@ -117,6 +99,7 @@ width:960px;
 margin:0 auto;
 }
 
+/*navigace*/
 nav ul{
 margin:0;
 padding:0;
@@ -132,9 +115,7 @@ font-style:italic;
 line-height:normal;
 }
 
-address{
-font-style:normal;
-}
+
 
 form, fieldset, legend{
 margin:0;
@@ -143,48 +124,18 @@ border:none;
 }
 
 
-.one_quarter, .two_quarter, .three_quarter, .four_quarter{
+.one_quarter{
 display:block;
 margin:0 20px 0 0;
-}
-
-.one_quarter{
 width:225px;
 }
 
-.two_quarter{
-width:470px;
-}
 
-.three_quarter{
-width:715px;
-}
-
-.four_quarter{
-width:960px;
-float:none;
-margin-right:0;
-clear:both;
-}
-
-.one_third, .two_third, .three_third{
+.one_third{
 display:block;
 float:left;
 margin:0 30px 0 0;
-}
-
-.one_third{
 width:300px;
-}
-
-.two_third{
-width:630px;
-}
-
-.three_third{
-width:960px;
-float:none;
-margin-right:0;clear:both;
 }
 
 .lastbox{
@@ -197,7 +148,7 @@ margin-right:0;
 #header{
 padding:20px 0;
 }
-
+/*uprava hl textu*/
 #header #hgroup h1, #header #hgroup h2{
 font-weight:normal;
 font-style:normal;
@@ -211,7 +162,7 @@ font-size:36px;
 #header #hgroup h2{
 font-size:13px;
 }
-
+/*postaveni headru a vyberove nabidky nahore*/
 #header nav{
 display:block;
 float:right;
@@ -221,10 +172,12 @@ color:#ffffff;
 background-color:#474747;
 }
 
+/*vyberova nabidka padding*/
 #header nav ul{
 padding:0 20px;
 }
 
+/*nabidka uprava slov atd*/
 #header nav li{
 display:inline;
 margin-right:25px;
@@ -234,23 +187,25 @@ text-transform:uppercase;
 #header nav li.last{
 margin-right:0;
 }
-
+/*wtf*/
 #header nav li a{
 color:#C0BAB6;
 background-color:#232323;
 }
 
+/*po najeti mysi*/
 #header nav li a:hover{
 color:#FF9900;
 background-color:#232323;
 }
 
 
-
+/*prvni obrazek*/
 #container{
 padding:30px 0;
 }
 
+/*same*/
 #container section{
 display:block;
 width:100%;
@@ -258,35 +213,19 @@ margin:0 0 30px 0;
 padding:0;
 }
 
-#container .last{
-  margin:0;
-}
 
-#container .more{
-text-align:right;
-}
-
-
-
-#container #homepage{
-display:block;
-width:100%;
-line-height:1.8em;
-}
-
-
+/*nadpisy cosplaye atd h2 jenom*/
 #container #homepage #services article figure h2{
 font-size:14px;
 font-weight:bold;
 }
 
 
-
+/*celej ten figcaption*/
 #container #homepage #intro article figure figcaption{
 float:left;
 width:460px;
 }
-
 
 
 
@@ -306,10 +245,17 @@ font-weight:bold;
 text-transform:uppercase;
 }
 
+.title nav ul li a:hover
+{
+color:#FF9900;
+background-color:#232323;
+}
+
 #footer section nav li{
 margin:0 0 5px 0;
 padding:0 0 5px 0;
 border-bottom:1px solid #555555;
+text-transform:uppercase;
 }
 
 #footer section nav li.last{
@@ -338,15 +284,15 @@ padding: 0;
 <div class="wrapper row1">
   <header id="header" class="clear">
     <div id="hgroup">
-      <h1><a href="#">Hravé odpoledne</a></h1>
+      <h1>Hravé odpoledne</h1>
       <h2>V moravské ostrave</h2>
     </div>
     <nav>
       <ul>
-        <li><a href="#">Domovská stránka</a></li>
-        <li><a href="#">Program</a></li>
-        <li><a href="#">Přihlášení</a></li>
-        <li class="last"><a href="#">Kontakty</a></li>
+        <li><a href="index.html">Domovská stránka</a></li>
+        <li><a href="program.html">Program</a></li>
+        <li><a href="login.php">Přihlášení</a></li>
+        <li class="last"><a href="contacts.html">Kontakty</a></li>
       </ul>
     </nav>
   </header>
@@ -363,7 +309,7 @@ padding: 0;
         <article class="one_third">
           <figure><img src="images/demo/290x180.gif" width="290" height="180">
             <figcaption>
-              <h2>Cosplaye</h2>
+              <h2><a href="cosplay.html">Cosplaye</a></h2>
               <p>Neco o te akci</p>
               
             </figcaption>
@@ -372,7 +318,7 @@ padding: 0;
         <article class="one_third">
           <figure><img src="images/demo/290x180.gif" width="290" height="180">
             <figcaption>
-              <h2>Přednáška</h2>
+              <h2><a href="speech.html">Přednáška</a></h2>
               <p>Neco o te akci</p>
               
             </figcaption>
@@ -381,7 +327,7 @@ padding: 0;
         <article class="one_third lastbox">
           <figure><img src="images/demo/290x180.gif" width="290" height="180">
             <figcaption>
-              <h2>Cesta po hádankách</h2>
+              <h2><a href="puzzle.html">Cesta po hádankách</a></h2>
               <p>necoo o teto akci</p>
               
             </figcaption>
@@ -420,8 +366,8 @@ padding: 0;
       <h2 class="title">Linky</h2>
       <nav>
         <ul>
-          <li><a href="#">GUg</a></li>
-          <li><a href="#">skola</a></li>
+          <li><a href="https://gug.cz/">GUg</a></li>
+          <li><a href="https://www.spseiostrava.cz/cs/">skola</a></li>
           <li class="last"><a href="#">dalsi</a></li>
         </ul>
       </nav>
